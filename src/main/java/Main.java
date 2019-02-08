@@ -29,12 +29,12 @@ public class Main {
 
         FacebookLogInPage facebookLogInPage = PageFactory.initElements(driver, FacebookLogInPage.class);
         facebookLogInPage.compareErrorTxt();
-        if (facebookLogInPage.compareErrorTxt()) {
+        if (facebookLogInPage.compareErrorTxt()==true) {
             System.out.println("Test passed =)");
         } else {
             System.out.println("Test failed =(");
         }
 
-        driver.quit();
+       // driver.quit();
     }
 }
