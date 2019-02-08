@@ -36,7 +36,6 @@ public class TestFacebookLoginPage {
         FacebookLogInPage facebookLogInPage = PageFactory.initElements(driver, FacebookLogInPage.class);
         facebookLogInPage.compareErrorTxt();
         Assert.assertTrue( facebookLogInPage.compareErrorTxt());
-        //Assert.assertEquals("Test passed =)", true, facebookLogInPage.compareErrorTxt());
     }
 
     @Test
@@ -46,7 +45,6 @@ public class TestFacebookLoginPage {
         facebookEnterPage.clickButtonLog();
         FacebookLogInPage facebookLogInPage = PageFactory.initElements(driver, FacebookLogInPage.class);
         facebookLogInPage.compareErrorTxt();
-        //Assert.assertFalse("Test failed =(", facebookLogInPage.compareErrorTxt());
         Assert.assertTrue( facebookLogInPage.compareErrorTxt());
     }
 
